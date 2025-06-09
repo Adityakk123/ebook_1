@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  title: "my-ebook"
+  author: "Parmeshvar"
+  date: "7/6/2025"
+
+  chapters:
+    - index.qmd  # ← This MUST be the first chapter
+    - part: Preface
+      chapters:
+        - why-read.qmd
+        - Developing.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+publish:
+  site-url: https://parmeshvar8.github.io/ebook_1
